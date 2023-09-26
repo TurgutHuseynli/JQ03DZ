@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .screen{
+            height: 100%;
+            background: black;
+            padding: 10px 0;
+        }
+        .number{
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin: 10px 0;
+        }
+        .task{
+            width: 300px;
+            height: 300px;
+            background: gray;
+        }
+        .blocks{
+            display: flex;
+            justify-content: space-evenly;
+            width: 300px;
+            height: 50px;
+        }
+        .block{
+            width: 50px;
+            height: 50px;
+            background: black;
+            margin-top: 50px;
+        }
+        .tell{
+            color: white;
+            text-align: center;
+            margin-top: 150px;
+        }
+        .greenBlock{
+            width: 50px;
+            height: 50px;
+            background: green;
+        }
+        .blackBtn{
+            background: black;
+            color: white;
+            border: 1px solid white;
+            padding: 2px;
+        }
+        .t4 .blackBtn, .t5 .blackBtn, .t6 .blackBtn, .t7 .blackBtn, .t8 .blackBtn, .t9 .blackBtn, .t10 .blackBtn, .t11 .blackBtn{
+            margin-top: 100px;
+            margin-left: 38%;
+        }
+        .t4 .task, .t5 .task, .t6 .task, .t7 .task, .t8 .task, .t9 .task, .t10 .task, .t11 .task, .t12 .task, .t13 .task{
+            padding-top: 50px;
+        }
+        .t4 .blocks, .t5 .blocks, .t6 .blocks, .t7 .blocks, .t8 .blocks, .t9 .blocks, .t10 .blocks, .t11 .blocks{
+            display: flex;
+            justify-content: center;
+        }
+        .t4 .blocks div, .t5 .blocks div, .t6 .blocks div, .t7 .blocks div, .t8 .blocks div, .t9 .blocks div{
+            margin: 0 5px;
+        }
+        .redBlock{
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+        .t8 .redBlock, .t9 .redBlock{
+            margin: 5px 0;
+        }
+        .t10 .greenBlock, .t11 .greenBlock, .exhibit .greenBlock{
+            color: white;
+            text-align: center;
+        }
+        .inp, .exhibit{
+            display: flex;
+            justify-content: center;
+        }
+        .inp input{
+            background: black;
+            color: white;
+        }
+        .exhibit{
+            margin-top: 60px;
+        }
+        .h{
+            display: flex;
+            justify-content: center;
+        }
+        .t13 .greenBlock{
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="t1">
+            <p class="number">1)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
+                <p class="tell">.each()</p>
+            </div>
+        </div>
+        <div class="t2">
+            <p class="number">2)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
+                <p class="tell">.first()</p>
+            </div>
+        </div>
+        <div class="t3">
+            <p class="number">3)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
+                <p class="tell">.last()</p>
+            </div>
+        </div>
+        <div class="t4">
+            <p class="number">4)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="greenBlock"></div>
+                </div>
+                <button class="blackBtn">Добавить</button>
+            </div>
+        </div>
+        <div class="t5">
+            <p class="number">5)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="greenBlock"></div>
+                </div>
+                <button class="blackBtn">Добавить</button>
+            </div>
+        </div>
+        <div class="t6">
+            <p class="number">6)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="greenBlock"></div>
+                </div>
+                <button class="blackBtn">Добавить</button>
+            </div>
+        </div>
+        <div class="t7">
+            <p class="number">7)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="greenBlock"></div>
+                </div>
+                <button class="blackBtn">Добавить</button>
+            </div>
+        </div>
+        <div class="t8">
+            <p class="number">8)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="greenBlock"></div>
+                </div>
+                <button class="blackBtn">Добавить</button>
+            </div>
+        </div>
+        <div class="t9">
+            <p class="number">9)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="greenBlock"></div>
+                </div>
+                <button class="blackBtn">Добавить</button>
+            </div>
+        </div>
+        <div class="t10">
+            <p class="number">10)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="greenBlock">Some text</div>
+                </div>
+                <button class="blackBtn">Очистить</button>
+            </div>
+        </div>
+        <div class="t11">
+            <p class="number">11)</p>
+            <div class="task">
+                <div class="blocks">
+                    <div class="greenBlock">Some text</div>
+                </div>
+                <button class="blackBtn">Удалить</button>
+            </div>
+        </div>
+        <div class="t12">
+            <p class="number">12)</p>
+            <div class="task">
+                <div class="inp">
+                    <input type="number" min="1" step="1">
+                    <button class="blackBtn">Изменить</button>
+                </div>
+                <div class="exhibit">
+                    <div class="greenBlock">Высота</div>
+                </div>
+                <div class="h">
+                    <button class="blackBtn">Высота блока</button>
+                </div>
+            </div>
+        </div>
+        <div class="t13">
+            <p class="number">13)</p>
+            <div class="task">
+                <div class="inp">
+                    <input type="number" min="1" step="1">
+                    <button class="blackBtn">Изменить</button>
+                </div>
+                <div class="exhibit">
+                    <div class="greenBlock">Ширина</div>
+                </div>
+                <div class="h">
+                    <button class="blackBtn">Ширина блока</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="./Hw41.js"></script>
+</body>
+</html>
